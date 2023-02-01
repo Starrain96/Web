@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #center {
+        padding: 30px;
+        width: 744px;
+        height: 1000px;
+        border: 1cm;
+        background-color: lightpink;
+    }
+
+    #total {
+        width: 800px;
+        height: 800px;
+        background: rgb(76, 137, 137);
+    }
+
+    div {
+        font-size: 15px;
+        font-weight: bold;
+        color: blue;
+    }
+
+    #top {
+        width: 800px;
+        height: 85px;
+        background: lime;
+        padding: 2px;
+    }
+
+    #top2 {
+        background-color: lightcyan;
+        color: black;
+        border-radius: 50px 5px;
+        width: 100px;
+        height: 50px;
+        border: 10px inset lightskyblue;
+        position: fixed;
+        top: 15px;
+        right: 50px;
+        text-align: center;
+    }
+
+    li {
+        list-style: none;
+        float: left;
+        padding: 15px;
+        width: 70px;
+        height: 20px;
+        text-align: center;
+    }
+
+    a:hover {
+        background: red;
+    }
+
+    li:first-child {
+        border-radius: 50px 0 0 50px;
+    }
+
+    li:last-child {
+        border-radius: 0 50px 50px 0;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    li:nth-child(2n) {
+        background: orange;
+    }
+
+    li:nth-child(2n-1) {
+        background: yellow;
+    }
+</style>
+
+<body>
+    <div id="total">
+        <div id="top">
+            <ul>
+                <li>
+                    <a href="page20.html">회원가입</a>
+                </li>
+                <li>
+                    <a href="page10.html">제품정보</a>
+                </li>
+                <li>
+                    <a href="page30.html">게시판</a>
+                </li>
+                <li>
+                    <a href="page40.html">장바구니</a>
+                </li>
+            </ul>
+        </div>
+        <div id="top2">
+            장바구니
+        </div>
+        <div id="center">
+            <h3>검색 단어 입력</h3>
+            <form action="보내는 서버주소">
+                검색어 <input type="text">
+                <button>전송</button>
+            </form>
+            <hr color="red">
+
+            <h3>로그인 화면</h3>
+            <form action="보내는 서버주소">
+                아이디 <input type="text"> <br>
+                비밀번호 <input type="password" name="" id="">
+                <button>로그인</button>
+            </form>
+            <hr color="red">
+            <h3>로그인 화면</h3>
+            <form action="보내는 주소">
+                <table>
+                    <tr>
+                        <td>아이디</td>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td>비밀번호</td>
+                        <td><input type="password" name="" id=""></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" align="center"><button>로그인</button></td>
+                    </tr>
+                </table>
+            </form>
+            <hr color="red">
+            <h3>회원가입 페이지</h3>
+            <form action="보내는 주소">
+                <table>
+                    <tr>
+                        <td>아이디</td>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td>비밀번호</td>
+                        <td><input type="password" name="" id=""></td>
+                    </tr>
+                    <tr>
+                        <td>이름</td>
+                        <td><input type="text" placeholder="성과 이름을 순서대로 붙여쓰세요." name="" id=""></td>
+                    </tr>
+                    <tr>
+                        <td>성별</td>
+                        <td>남자<input type="radio" name="gender">여자<input type="radio" name="gender"></td>
+                    </tr>
+                    <tr>
+                        <td>취미</td>
+                        <td>등산<input type="checkbox">
+                            게임<input type="checkbox">
+                            자전거<input type="checkbox">
+                            달리기<input type="checkbox">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>전화번호</td>
+                        <td>
+                            <select name="tel" id="">
+                                <option>알뜰폰</option>
+                                <option>SKT</option>
+                                <option>LG</option>
+                                <option>KT</option>
+                            </select>
+                            <select name="" id="">
+                                <option>010</option>
+                                <option>011</option>
+                                <option>016</option>
+
+                            </select><input type="number" name="" id="">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>생년월일</td>
+                        <td>
+                            <input type="date" name="" id="">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>가입한 날짜</td>
+                        <td><input type="datetime" name="" id=""></td>
+                    </tr>
+                    <tr>
+                        <td>가입한 주</td>
+                        <td><input type="week" name="" id=""></td>
+                    </tr>
+                    <tr>
+                        <td>하고 싶은 말</td>
+                        <td>
+                            <textarea name="" id="" cols="30" rows="10" placeholder="100글자 이내로 써주세요."></textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" align="center"><button>로그인</button></td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
