@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //가로 22.1, 세로 33.1
+        //사각형의 면적을 구해라
+        row = prompt('가로의 길이는?')
+        column = prompt('세로의 길이는?')
+        result = parseFloat(row)*parseFloat(column)
+        alert('사각형의 면적은 ' + result.toFixed(1) +'입니다.') // 소숫점 1자리까지.
+
+        const PRICE = 4500 //변경 불가능한 값을 넣을 때 const 대문자
+        a=prompt('구매한 커피의 갯수는?')
+        b=PRICE*a
+        alert('전체 결제금액은 ' + b + '입니다.')
+
+        apple = 2000
+        pear = 3000
+        c=3
+        d=2
+        e=apple*3+pear*2
+        alert('전체 결제금액은 ' + e + '입니다.')
+
+        yd = 25
+        td = 10
+        f=(parseInt(yd)+parseInt(td))/2
+        alert('어제와 오늘의 평균 온도는 ' + f + '입니다.')
+
+
+    </script>
+</head>
+<body>
+</body>
+</html>
