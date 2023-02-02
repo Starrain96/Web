@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function hi(params) {
+            alert('2시간 뒤면 끝이다...후..')
+        }
+        function bye(params) {
+            alert('잘가 수업 끝났어.')
+        }
+        function check() {
+            id = "root"
+            pw = "1234"
+            id2 = document.getElementById('id2').value // "root"
+            pw2 = document.getElementById('pw2').value // "1234"
+            result = document.getElementById('result')
+            if (id == id2 && pw == pw2) {
+                result.innerHTML = "<font color = green> 로그인 성공! </font> <img src='yes.png' width = 100 height=100>"
+            }
+            else {
+                result.innerHTML = "<font color = red> 로그인 실패! </font> <img src='no.png' width = 100 height=100>"
+
+            }
+        }
+
+        function check2() {
+            id2 = document.getElementById('id2').value // "root"
+            if (id2.length < 5) {
+                result.innerHTML = "<font color = red> 패스워드가 다릅니다! </font> <img src='no.png' width = 100 height=100>"
+            }
+            else {
+                result.innerHTML = ""
+
+            }
+        }
+
+        function check3() {
+            pw2 = document.getElementById('pw2').value
+            pw3 = document.getElementById('pw3').value
+            if (pw2 == pw3) {
+                result.innerHTML = "<font color = green> 패스워드가 동일함. </font> <img src='yes.png' width = 100 height=100>"
+            } else {
+                result.innerHTML = "<font color = red> 패스워드가 다릅니다! </font> <img src='no.png' width = 100 height=100>"
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <button onclick="hi()">인사처리</button>
+    <button onclick="bye()">안녕처리</button>
+
+    <hr color="red">
+
+    아이디 : <input type="text" id="id2" value=""> <button onclick="check2()">글자수체크</button> <br>
+
+    <hr color="red">
+
+    비밀번호 : <input type="text" id="pw2" value=""><br>
+    비밀번호 : <input type="text" id="pw3" value=""> <button onclick="check3()">패스워드동일</button><br>
+
+    <hr color="red">
+
+    <button onclick="check()">로그인</button> <br>
+
+    <div id="result"></div>
+</body>
+
+</html>
