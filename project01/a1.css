@@ -1,0 +1,29 @@
+table {
+    border:1px solid black;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+body {
+    background-color: white;
+    margin-left:auto;
+    margin-right:auto;
+}
+input {
+    background-color: darkgray;
+}
+button {
+    background-color: darkgray;
+}
+form {
+    background-color: grey;
+    width: 500px;
+    height: 500px;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+img {
+    width: 500px;
+    height : 500px;
+}
